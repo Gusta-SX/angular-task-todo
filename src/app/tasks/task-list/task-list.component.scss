@@ -1,0 +1,28 @@
+.list-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-black-900);
+}
+.btn {
+  background-color: var(--skin-color);
+  color: var(--bg-black-700);
+  transition: all .3s ease;
+}
+.btn:hover {
+  transform: scale(1.02);
+}
+hr {
+  background: var(--bg-black-900);
+}
+li { 
+  list-style: none; 
+}
+.list-group {
+  margin-top: 30px;
+}
+.list-group-list {
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #444;
+}
