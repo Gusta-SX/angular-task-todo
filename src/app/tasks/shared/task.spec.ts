@@ -1,4 +1,4 @@
-import { Task } from './task';
+import { Task } from '../shared/task';
 
 describe('Task', () => {
   it('should create an instance', () => {

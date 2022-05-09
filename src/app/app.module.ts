@@ -6,17 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { TaskListComponent } from './tasks/task-list/task-list.component';
 import { TaskListItemComponent } from './tasks/task-list-item/task-list-item.component';
 import { TaskFormComponent } from './tasks/task-form/task-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskListComponent,
     TaskListItemComponent,
-    TaskFormComponent
+    TaskFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

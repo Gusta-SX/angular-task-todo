@@ -1,7 +1,7 @@
 <div class="task-item">
   <div class="start">
     <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input">
+      <input [(ngModel)]="task.completed" (change)="onCompletedCheckChange(task)" type="checkbox" class="form-check-input">
     </div>
     <div>
       <div [innerHTML]="task.name" class="task-item-name" [ngClass]="task.completed ? 'task-completed' : ''"></div>
@@ -13,12 +13,7 @@
       <button type="button" [routerLink]="['/edit', task.id]" class="btn btn-primary mr-1">Alterar</button>
     </div>
     <div>
-      <button type="button"  class="btn btn-danger mr-1 delete">Excluir</button>
+      <button type="button" (click)="remove(task)" class="btn btn-danger mr-1 delete">Excluir</button>
     </div>
   </div>
 </div>
-
-
-<!-- [(ngModel)]="task.completed" (change)="onCompletedCheckChange(task) -->
-
-<!-- (click)="remove(task)" -->

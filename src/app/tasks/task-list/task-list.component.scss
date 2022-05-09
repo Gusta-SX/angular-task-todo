@@ -1,8 +1,5 @@
-.list-container {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  color: var(--bg-black-900);
+.alert {
+  text-align: center;
 }
 .btn {
   background-color: var(--skin-color);
@@ -11,12 +8,6 @@
 }
 .btn:hover {
   transform: scale(1.02);
-}
-hr {
-  background: var(--bg-black-900);
-}
-li { 
-  list-style: none; 
 }
 .list-group {
   margin-top: 30px;

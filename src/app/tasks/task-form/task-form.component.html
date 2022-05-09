@@ -1,1 +1,25 @@
-<p>task-form works!</p>
+<div>
+  <div class="list-container">
+    <h2>{{title}}</h2>
+  </div>
+  <hr />
+</div>
+
+<section id="form">
+  <form (ngSubmit)="onSubmit()" #formTask="ngForm"> 
+    <div class="form-group">
+      <div class="form-inputs">
+        <label>Nome</label>
+        <input name="name" class="form-control" [(ngModel)]="task.name" />
+      </div>
+      <div class="form-inputs">
+        <label>Descrição</label>
+        <textarea name="description" class="form-control" [(ngModel)]="task.description" rows="5"></textarea> 
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-secondary" [routerLink]="['']">Cancelar</button>
+    </div>
+  </form>
+</section>
